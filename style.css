@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Inter;
+  src: url("Inter-Regular.ttf");
+}
+* {
+  font-family: Inter;
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.info_box {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  border: 2px solid hsl(0, 0%, 12%);
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 15px;
+}
+.profile_img {
+  border-radius: 50%;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.text_green {
+  color: hsl(75, 94%, 57%);
+}
+.text_grey {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+button {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+
+  font-weight: 600;
+
+  margin: 10px;
+}
+button:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .info_box {
+    width: 337px;
+    height: 587px;
+  }
+  button {
+    font-size: 15px;
+    height: 100px;
+    width: 300px;
+  }
+  .profile_img {
+    width: 88px;
+    height: 88px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .text_green {
+    font-size: 15px;
+  }
+  .text_grey {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 380px) {
+  .info_box {
+    width: 700px;
+    height: 1150px;
+  }
+  button {
+    font-size: 18px;
+    height: 100px;
+    width: 500px;
+  }
+  .profile_img {
+    width: 200px;
+    height: 200px;
+  }
+}
